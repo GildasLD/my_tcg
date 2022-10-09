@@ -23,8 +23,8 @@
   "author": "",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "test": "node_modules/.bin/babel-node --presets es2015 spec/run.js",
-    "gulp": "node_modules/.bin/gulp"
+    "test": "babel-node --presets es2015 spec/run.js",
+    "gulp": "gulp"
   },
   "resolutions": {
     "graceful-fs": "^4.2.4"
