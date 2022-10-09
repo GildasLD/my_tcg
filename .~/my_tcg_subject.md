@@ -119,11 +119,11 @@ Permet de gérer la main d’un joueur. Doit implémenter les méthodes suivante
 
 - Accepte un objet en premier argument. Cet objet doit avoir une propriété cards contenant un tableau (de carte) qui constituerons les cartes de la main.
 - On pourra préciser une limite maximum de carte qu’il est possible d’avoir en main. Pour ce faire, il faudra préciser une propriété « limit » dans l’objet passé en paramètre au constructeur.
-- Si cette limite n’est pas précisée, la valeur par défaut de cette limite sera
+- Si cette limite n’est pas précisée, la valeur par défaut de cette limite sera 7
 
 _bool addCard(object card)_
 
-- Ajoute une carte (qui est passé en paramètre) à la fin de la liste des cartes déjà dans la main. Si tout s’est bien passé, la fonction retourne true, sinon false.
+- Ajoute une carte (qui est passé en paramètre) à la fin de la liste des cartes déjà dans la main. <br> Si tout s’est bien passé, la fonction retourne true, sinon false.
 - Aucune carte ne doit être ajoutée si la limite est déjà atteinte, la méthode doit retourner false.
 
 _bool removeCard(int position)_
