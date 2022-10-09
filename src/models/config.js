@@ -2,6 +2,7 @@ import GameModel from "./game";
 import DeckModel from "./deck";
 import PlayerModel from "./player";
 import HandModel from "./hand";
+import BoardModel from "./board";
 
 export default {
   game: {
@@ -21,5 +22,9 @@ export default {
     class: HandModel,
     param:
       '{"cards":[{"face":"card-1"},{"face":"card-2"},{"face":"card-3"}], "limit" : 7}',
+  },
+  board: {
+    class: BoardModel,
+    param: '{"cards": [], "limit": 7}',
   },
 };
