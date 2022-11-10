@@ -13,7 +13,14 @@ describe("Board", function () {
     });
 
     it("If no limit is set, the maximum number of cards is 7", function () {
-      board.cards = ["card-1", "card-2", "card-3", "card-5", "card-6", "card-7"];
+      board.cards = [
+        "card-1",
+        "card-2",
+        "card-3",
+        "card-5",
+        "card-6",
+        "card-7",
+      ];
       expect(board.addCard("card-8")).toBe(false);
     });
   });
@@ -38,7 +45,14 @@ describe("Board", function () {
     it("Must return the number of cards in the deck", function () {
       board.cards = ["card-1", "card-2", "card-3"];
       expect(board.getCardsCount()).toBe(3);
-      board.cards = ["card-1", "card-2", "card-3", "card-4", "card-5", "card-6"];
+      board.cards = [
+        "card-1",
+        "card-2",
+        "card-3",
+        "card-4",
+        "card-5",
+        "card-6",
+      ];
       expect(board.getCardsCount()).toBe(6);
     });
   });
